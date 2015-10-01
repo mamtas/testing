@@ -1,0 +1,221 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 51px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #fff;
+  background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .page-header {
+  margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+.comppl-tabs li {
+  color: black;
+  float: left;
+  line-height: 40px;
+  list-style: outside none none;
+  text-align: center;
+  width: 50%;
+}
+	/*.comppl-tabs li:hover, .comppl-tabs li:hover a {
+		background-color: rgb(6,179,6);
+		color:white;
+	}*/
+	.comppl-tabs ul{padding:0px;}
+	.comppl-tabs li a {
+  color: rgb(31, 143, 251);
+  font-size: 21px;
+  text-decoration: none;
+  /*text-shadow: 1px 0 3px rgb(157, 157, 157);*/
+}
+	.comppl-tabs li:nth-child(1) { border-right: 1px solid #ccc;}
+	.comppl-tabs li:nth-child(3) { border-radius: 0px 4px 4px 0px;}
+	.comppl-tabs .active {
+		background-color: rgb(6,179,6);
+	}
+	.comppl-tabs-content {
+  border: 1px solid #ccc;
+  padding: 0;
+}
+.comppl-tabs .active {
+  background-color: #dadad8;
+  border-bottom: 1px solid #ccc;
+}
+.comppl-tabs .active a{
+color:black;
+}
+.comppl-content{
+padding:6%;
+}
+
+/* new tab */
+.border{border:1px solid #ccc;}
+.top-border{border-top:1px solid #ccc;}
+.topbottom{padding-top:10px;padding-bottom:10px;}
+.font12{font-size:12px;}
+.san-well{}
+.heading-blue {
+  background: none repeat scroll 0 0 rgb(31, 143, 251);
+  color: white;
+  font-weight: 600;
+  height: 37px;
+  line-height: 35px;
+  text-align: center;
+  vertical-align: middle;
+}
+.san-well {
+  color: #bcbcbc;
+  display: block;
+  font-size: 11px;
+}
+.right_bar_tab li {
+  color: black;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  line-height: 40px;
+  list-style: outside none none;
+  text-align: center;
+  width: 33.3%;
+}
+.righttabul {
+  border-top: 1px solid #ccc;
+}
+.righttabul .active {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+  color:rgb(31, 143, 251);
+}
+.righttabul li {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  background: none repeat scroll 0 0 #ececec;
+  border-color: -moz-use-text-color #ccc #ccc;
+  border-image: none;
+  border-style: none solid solid;
+  border-width: medium 1px 1px;
+}
+.right_bar_tab{
+	padding:0px;
+	
+}
+ul{
+	padding:0px;
+
+}
+.righttab-table {
+  margin-bottom: 17px;
+  margin-top: 17px;
+}
+.righttab-table tr {
+ height: 30px;
+}
+.righttab-table td {
+  font-size: 12px;
+  border:none !important;
+}
+.righttab-table td:first-child {
+  font-weight: bold;
+}
+.righttabul:after, .righttabul:before {
+  clear: both;
+  content: "";
+  display: block;
+}

@@ -1,0 +1,4 @@
+<li ng-repeat="criteria in criterias" class='{activeFilter:$first} accor-closes asd' id="{{criteria.id}}" ng-click="selectRadio($event)">
+						<h4 class="panel-title"><input type="radio" name="filters" value=
+                              "{{criteria.name}}" ng-checked="$first" ng-click="selectCompanyFilter('{{criteria.name}}')"><label for="{{criteria.name}}">{{criteria.name}}</label></h4>
+						</li> 
